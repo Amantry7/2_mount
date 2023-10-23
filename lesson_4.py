@@ -65,7 +65,7 @@
 # print(phon)
         
         
-# class Smartphone(Computer, Phone): 
+# class SmartPhone(Computer, Phone): 
 #     def __init__(self, locution, distante, cpu, memory, ):
 #         super().__init__(cpu, memory, )
 #         self.locution = locution

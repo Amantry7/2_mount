@@ -42,6 +42,4 @@ class Curn:
 curn = Curn(543525)
 curn.choice()
 print(curn)
-# print(curn)
- 
-        
+print(curn)
