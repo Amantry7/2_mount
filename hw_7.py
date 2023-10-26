@@ -9,7 +9,7 @@ bazza("hw.db")
 def table(conn,sql): 
     cursor = conn.cursor()
     cursor.execute(sql)
-    
+
 def create_products(conn,product: tuple):
     sql = """INSERT INTO products
     (product_tittle, price, quantity)
@@ -23,10 +23,8 @@ def delet_product(conn,id: int):
     sql = '''DELETE FROM products WHERE id = ?'''
     cursor = conn.cursor()
     cursor.execute(sql, (id,))
-    conn.commit()
+    conn.commit()    
 
-    
-    
     
 sql_table = """
 CREATE TABLE IF NOT EXISTS products (
@@ -43,3 +41,5 @@ if connection:
     create_products(connection,("Apple", 100.00, 120))
     create_products(connection,("SAMSUNG", 100.00, 120))
     delet_product(connection, 1)
+    
+
